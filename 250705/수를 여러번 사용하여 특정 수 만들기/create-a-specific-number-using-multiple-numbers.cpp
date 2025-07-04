@@ -8,15 +8,15 @@ int main() {
     cin >> A >> B >> C;
     int ans = -9999;
 
-    for(int i = 1; i <= 1000; i++)
+    for(int i = 0; i <= 1000; i++)
     {
-        for(int j = 1; j <= 1000; j++)
+        for(int j = 0; j <= 1000; j++)
         {
             if ( i == j ) continue;
 
             int temp = A*i + B*j;
 
-            if (temp < C)
+            if (temp <= C)
                 ans = max(ans, temp);
         }
     }
