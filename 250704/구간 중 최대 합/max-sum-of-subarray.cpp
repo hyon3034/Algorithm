@@ -22,7 +22,7 @@ int main() {
         sum[i] = sum[i-1] + arr[i];
     }
 
-    for (int j = k; j < n; ++j)
+    for (int j = k-1; j < n; ++j)
     {
         ans = max(ans, sum[j] - sum[j-k]);
     }
