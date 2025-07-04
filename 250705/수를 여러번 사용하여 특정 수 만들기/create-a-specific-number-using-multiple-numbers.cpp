@@ -12,8 +12,6 @@ int main() {
     {
         for(int j = 0; j <= 1000; j++)
         {
-            if ( i == j ) continue;
-
             int temp = A*i + B*j;
 
             if (temp <= C)
