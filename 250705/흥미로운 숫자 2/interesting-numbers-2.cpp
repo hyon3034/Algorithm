@@ -29,6 +29,7 @@ int main() {
             if (num[i] == 1)
             {
                 flag = true;
+                cnt++;
             }
 
             if (num[i] >= 2)
@@ -37,7 +38,7 @@ int main() {
             }
         }
 
-        if (cnt == 1 && flag)
+        if (cnt == 2 && flag)
             ans++;
     }
 
