@@ -26,15 +26,12 @@ int main() {
 
         for (int i = 0; i < 10; i++)
         {
-            if (num[i] == 1)
-            {
-                flag = true;
-                cnt++;
-            }
-
-            if (num[i] >= 2)
+            if (num[i] > 0)
             {
                 cnt++;
+                
+                if (num[i] == 1)
+                    flag = true;
             }
         }
 
