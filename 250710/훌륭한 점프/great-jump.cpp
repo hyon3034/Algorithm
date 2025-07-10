@@ -33,7 +33,7 @@ int main() {
 
     int maximin = 99999999;
     
-    for(int a = 100; a >= 1; a--)
+    for(int a = 100; a >= max(arr[0],arr[n-1]); a--)
     {
         if(IsPossible(a))
         {
