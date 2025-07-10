@@ -15,6 +15,7 @@ bool IsPossible(int min_val) {
 
     for(int i = 1; i < cnt; i++) {
         int dist = available_indices[i] - available_indices[i - 1];
+
         if(dist > k)
             return false;
     }
@@ -30,17 +31,17 @@ int main() {
         cin >> arr[i];
     }
 
-    int maximin = 0;
+    int maximin = 99999999;
     
-    for(int a = 1; a <= 100; a++)
+    for(int a = 100; a >= 1; a--)
     {
-        if(!IsPossible(a))
+        if(IsPossible(a))
         {
-            maximin = a;
+            maximin = min(maximin,a);
         }
     }
 
-    cout << maximin + 1;
+    cout << maximin;
 
     return 0;
 }
