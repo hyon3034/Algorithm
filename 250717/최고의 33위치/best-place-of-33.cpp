@@ -16,27 +16,8 @@ int main() {
 
     int ans = -99999;
 
-    if (N==3)
-    {
-        ans = 0;
-
-        for(int i = 0; i < N; i++)
-        {
-            for(int j = 0; j < N; j++)
-            {
-                if(grid[i][j])
-                {
-                   ans++; 
-                }
-            }
-        }
-
-        cout << ans;
-        return 0;
-    }
-
-    for (int i = 0; i < N-3; i++) {
-        for (int j = 0; j < N-3; j++) {
+    for (int i = 0; i < N-2; i++) {
+        for (int j = 0; j < N-2; j++) {
             int count = 0;
 
             for (int k = i; k < i+3; k++){
